@@ -1,56 +1,153 @@
 body{
+    margin: 0;
     background-image: url(../images/lightbulb.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
 }
 
-nav article{
-    padding-left: 30px;
-    background:rgb(61, 75, 117);
-    padding: -20%;
+.container {  
+height: 100vh;
+display: grid; 
+  grid-template-columns: 0.8fr 0.9fr 1.3fr 0.7fr; 
+  grid-template-rows: 0.3fr 0.3fr 0.7fr 1fr 0.9fr 3.4fr 1fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "portfolio-name portfolio-name portfolio-name portfolio-name"
+    "navbar navbar navbar navbar"
+    ". . . ."
+    "face . hi hi"
+    "face . jose jose"
+    "face . jose jose"
+    ". . . ."
+    "contactss contactss contactss .";
+  }
+  
+  .portfolio-name { 
+    grid-area: portfolio-name;  
+    background-color:rgb(12, 20, 44) ;
+    align-items:center;
+    display:flex;
+    top: 0;
+    padding: 0;
 }
 
-nav h1{
-    font-family: 'Montserrat', sans-serif;
+.portfolio-name h4{
+    font-size: 30px;
     color: white;
-    font-size: 25px;
-
-}
-
-nav ul{
-    list-style-type: none;
-    width:90%;
-    text-align: center
-}
-
-nav li{
-    display: inline;
-    margin: 25px;
-}
-
-nav a{
-    color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 6px 15px;
+    margin: 0;
+    padding-left: 20px;
+    
+}
+  
+.navbar { 
+    grid-area: navbar;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: center; 
 }
 
-nav a:hover, .active {
+.navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 2em 3em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+}
+
+.navbar a:hover {
     color: black;
-    background: #fff;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 45px;
+    align-items: center;
+    display: flex;
+    height: 1px;
 }
+  
+.contactss { grid-area: contactss; 
+    display:block;
+margin-left: 690px;
+margin-bottom: 150px;
+}
+ 
+.github{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.emails{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.phones{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.linkedin{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+red{
+    color: red;
+}
+  
+.face {
+     grid-area: face;
+     
+    margin-left: 60px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    opacity: 60%;
+    height: auto;
+    object-fit: cover;
+    
+    
+    }
+  
+.hi { 
+    grid-area: hi;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+    display: flex;
+    
+}
+  
+.jose 
+{ grid-area: jose;
+    grid-area: hi;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+    display: flex;
+    object-fit: cover ;
+    align-self: center;
+    margin-top: 150px;
+     
+}
+  
+
+
+
+
+
 
 #profile-image{
-    width: 500px;
-    margin-left: 0px;
-    margin-top: 155px;
-    opacity: 60%;
+    
+
 }
 
-div h1{
+div h{
     color: aliceblue;
     font-size: 55px;
     font-family: 'Orbitron', sans-serif;
@@ -59,9 +156,9 @@ div h1{
     padding: 0px;
 }
 
-div h2{
+di h2{
     color: aliceblue;
-    font-size: 95px;
+    font-size: 100px;
     font-family: 'Orbitron', sans-serif;
     margin-top: 1px;
     margin-left: 1000px;
@@ -70,3 +167,5 @@ div h2{
 
 span{
     color: red;
+}
+

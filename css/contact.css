@@ -1,63 +1,198 @@
 body{
+    margin: 0;
     background-image: url(../images/lightbulb.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
 }
 
-nav article{
-    padding-left: 30px;
-    background:rgb(61, 75, 117);
-    padding: -20%;
+.container {
+    height: 100vh;
+    display: grid; 
+  grid-template-columns: 1.2fr 0.4fr 1.1fr 1.3fr; 
+  grid-template-rows: 0.2fr 0.4fr 0.3fr 3.3fr 1.4fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "portfolio-name portfolio-name portfolio-name portfolio-name"
+    "navbar navbar navbar navbar"
+    ". messbar messbar ."
+    "blank1 form-text form-box blank2"
+    "blank3 blank3 blank3 blank3"
+    "contactss contactss contactss contactss"; 
 }
-
-nav h1{
-    font-family: 'Montserrat', sans-serif;
+.portfolio-name { 
+    grid-area: portfolio-name;  
+    background-color:rgb(12, 20, 44) ;
+    align-items:center;
+    display:flex;
+    top: 0;
+    padding: 0;
+}
+.portfolio-name h4{
+    font-size: 30px;
     color: white;
-    font-size: 25px;
-
-}
-
-nav ul{
-    list-style-type: none;
-    width:90%;
-    text-align: center
-}
-
-nav li{
-    display: inline;
-    margin: 25px;
-}
-
-nav a{
-    color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 6px 15px;
+    margin: 0;
+    padding-left: 20px;
+    
+}
+  
+.navbar { grid-area: navbar;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top:0 
 }
 
-nav a:hover, .active {
+.navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 2em 3em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+}
+
+.navbar a:hover {
     color: black;
-    background: #fff;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 45px;
+    align-items: center;
+    display: flex;
+    height: 1px;
 }
-
-.side-articles{
-    background-color: rgb(165, 166, 212);
-    text-align: left;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 5%;
-    padding: 40px;
-}
-
-
-.contact-me{
+.messbar { grid-area: messbar;
+   
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-weight: 900;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        padding: 0;
+
 }
 
-.infos{
+
+
+.form-box { 
+    grid-area: form-box;
+    display: flex;
+    background-color:#131313; 
+    margin-bottom: 0;
+}
+.form-box2{
+    list-style:none;
+    margin-bottom: 0;
+}
+.name-box{
+    width: 350px;
+    height: 25px;
+    border-radius: 2%;
+}
+.name-box:hover{
+    border: 2px solid yellow;
+    border-radius: 2%;
+    
+}
+.email-box{
+    width: 350px;
+    height: 25px;
+    border-radius: 2%;
+}
+.email-box:hover{
+    border: 2px solid yellow;
+    border-radius: 2%;}
+.phone-box{
+    width: 350px;
+    height: 25px;
+    border-radius: 2%;
+}
+.phone-box:hover{
+    border: 2px solid yellow;
+    border-radius: 2%;}
+.message-box{
+    width: 350px;
+    height: 130px;
+    border-radius: 2%;
+}
+.message-box:hover{
+    border: 2px solid yellow;
+    border-radius: 2%;}
+.form-text { 
+    grid-area: form-text;
+    display: flex;
+    background-color: #131313;
+    text-align: right;
+    margin-bottom: 0;
+}
+.form-text2{
+    list-style:none;
+    margin-bottom: 0;
+} 
+.name-text{
+    display: fle;
+    color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+}
+.email-text{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;  
+    margin-bottom: 10px; 
+    list-style: none;
+}
+.phone-text{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+}
+.message-text{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    
+
+}
+.contactss { grid-area: contactss; 
+    display:block;
+margin-left: 690px;
+margin-bottom: 150px;
+}
+ 
+.github{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.emails{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.phones{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.linkedin{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
+red{
+    color: red;
+}
+  
+.blank1 { grid-area: blank1; }
+    
+.blank2 { 
+    grid-area: blank2;
+    display: flex; 
 }

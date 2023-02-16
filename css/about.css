@@ -1,83 +1,170 @@
 body{
+    margin: 0;
     background-image: url(../images/lightbulb.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
 }
+.container {
+    height:100vh;
+    display: grid; 
+  grid-template-columns: 0.8fr 0.9fr 1.3fr 0.7fr; 
+  grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr 0.9fr 3.4fr 1fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "portfolio-name portfolio-name portfolio-name portfolio-name"
+    "navbar navbar navbar navbar"
+    ". . . ."
+    "aboutme aboutme . ."
+    "parttime parttime chef ."
+    "aboutmee aboutmee chef ."
+    ". . . ."
+    "contactss contactss contactss contactss"; 
+  }
 
-nav article{
-    padding-left: 30px;
-    background:rgb(61, 75, 117);
-    padding: -20%;
+  .portfolio-name { 
+    grid-area: portfolio-name;  
+    background-color:rgb(12, 20, 44) ;
+    align-items:center;
+    display:flex;
+    top: 0;
+    padding: 0;
 }
-
-nav h1{
-    font-family: 'Montserrat', sans-serif;
+.portfolio-name h4{
+    font-size: 30px;
     color: white;
-    font-size: 25px;
-
-}
-
-nav ul{
-    list-style-type: none;
-    width:90%;
-    text-align: center
-}
-
-nav li{
-    display: inline;
-    margin: 25px;
-}
-
-nav a{
-    color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 6px 15px;
+    margin: 0;
+    padding-left: 20px;
 }
 
-nav a:hover, .active {
+
+
+
+.navbar { grid-area: navbar;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top:0 
+}
+
+.navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 2em 3em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+}
+
+.navbar a:hover {
     color: black;
-    background: #fff;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 45px;
+    align-items: center;
+    display: flex;
+    height: 1px;
 }
 
-div article h1{
+
+.chef { grid-area: chef;
+    width: 600px;
+    margin-right: 50px;
+    image-rendering:auto;
+    float: right;
+    position: absolute;
+    top: 350px;
+    right:350px; 
+}
+
+.aboutme { grid-area: aboutme;
     color: white;
     font-family: 'Orbitron', sans-serif;
-    font-size: 150%;
-    margin-top: 1%;
-    margin-left: 48%
-    
-    
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 60px;
+ }
+  .parttime { grid-area: parttime;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 45px;
+    text-shadow: .1px .1px 4px white;
+    margin-top: 11px;
+    margin-left: 30px; }
 
-    
+
+  .aboutmee { grid-area: aboutmee;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    margin-top: px;
+    padding-left: 10%;
+    padding-right: 45%;
+    word-spacing: 10px; }
+  
+    .contactss { grid-area: contactss; 
+        display:block;
+        margin-top: 100px;
+    margin-left: 690px;
+    margin-bottom: 150px;
+    }
+     
+    .github{
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .emails{
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .phones{
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .linkedin{
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+.occupation{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 45px;
+    text-shadow: .1px .1px 4px white;
+    margin-top: 11px;
+    margin-left: 9px;
 }
 
 .about-me{
-    margin-top;:10%;
-    margin-left: 45%;
-    margin-right:30%;
     
+
 }
 
-main div article p{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 3%;
-    padding-right: 3%;
-    word-spacing: .1rem;
-    font-size: 20px;
-}
-
-div article strong{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 48%;
-    font-size: 45px;
-}
-
-span{
+red{
     color: red;
+    text-shadow: .9px 4px 4px black;
 }
+
+.chef{
+    display: flex;
+    width: 400px;
+    height: 600px;
+    margin-right: 400px;
+}
+
+figure {
+    margin-top: 190px;
+    margin-left: 910px;
+    padding-right: 10px;
+  }
+  
+figcaption {
+    font-style: italic;
+    font-size: 1em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  

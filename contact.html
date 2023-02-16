@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Clone</title>
     <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,45 +12,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    <nav>
-        <article>
-            <h1>Jose's Portfolio</h1>
-        </article>
-        <ul>
-            <li><a href="home.html" >HOME</a></li>
-            <li><a href="about.html" >ABOUT</a></li>
-            <li><a href="contact.html" class="active">CONTACT</a></li>
-        </ul>
-    </nav>
-    <main>
-        <article class="side-articles">
-            <h1 class="contact-me">SEND ME A MESSAGE</h1>
-            <br>
-            <form action="mailto:jigolaurito@gmail.com" method="POST">
-                <label class="infos" for="name"><strong>Name</strong></label>
-                <br>
-                <input type="text" id="name" placeholder="Your Name">
+    <div class="container">
+        <div class="portfolio-name">
+            <h4>Jose's <red>Portfolio</red></h4>
+        </div>
+        <div class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#">TRAVELS</a>
+            <a href="contact.html">CONTACT ME</a>
+        </div>
+        <div class="form-text">                    
+            <ul class="form-text2">
+                <br><br><br>
+                <li class="name">
+                    <label class="name-text">Name: </label>                                  
+                </li>
                 <br><br>
-                <label class="infos" for="email"><strong>Email</strong></label>
-                <br>
-                <input type="text" id="email" placeholder="Your Email">
+                <li class="email">
+                    <label class="email-text" for="email">Email: </label>                        
+                </li>
                 <br><br>
-                <label class="infos" for="phone"><strong>Phone</strong></label>
-                <br>
-                <input type="text" id="phone" placeholder="Phone Number">
+                <li class="phone">
+                    <label class="phone-text" for="phone">Phone: </label>                       
+                </li>
                 <br><br>
-                <label class="infos" for="body"><strong>Message</strong></label>
-                <br>
-                <textarea id="body" placeholder="Your Message" rows="5"></textarea>
-                <br><br>
-                <button type:"submit">Submit</button>
+                <li class="message">
+                    <label class="message-text" for="body">Message: </label>                                      
+                </li>
+            </ul>
+            <br>            
             </form>
-        
-        </article>
-
-            
-    
+        </div>
+        <div class="form-box">
+            <ul class="form-box2">
+                <br><br><br>
+                <li><input type="text" class="name-box" placeholder="Your Name"></li>
+                <br><br>
+                <li><input type="text" class="email-box" id="email" placeholder="Your Email"></li>
+                <br><br>
+                <li><input type="text" class="phone-box" id="phone" placeholder="Phone Number"></li>
+                <br><br>
+                <li><textarea class="message-box" placeholder="Your Message" rows="5"></textarea></li>
+                <br>
+                <button type="submit">Submit</button>
+            </ul>                        
+        </div>
+        <div class="blank2"></div>
+        <div class="messbar">SEND ME A MESSAGE</div>
+        <div class="blank3"></div>
+        <div class="blank1"></div>
+        <div class="contactss">
+            <a href="https://github.com/jigolaurito93"><img class="github" src="images/github.png" alt=""></a>    
+            <a href="#"><img class="emails" src="images/email.png" alt=""></a>      
+            <a href="#"><img class="phones" src="images/phone.png" alt=""></a>      
+            <a href="https://www.linkedin.com/in/jose-inigo-laurito-193230141?trk=people-guest_people_search-card"><img class="linkedin" src="images/linkedin.png" alt=""></a>   
+        </div>                          
+    </div>
 </body>
 </html>
